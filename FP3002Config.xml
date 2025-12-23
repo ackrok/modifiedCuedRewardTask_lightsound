@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <DeviceInformation>
+    <Id>2064-013c</Id>
+    <HardwareVersion>2.0</HardwareVersion>
+    <FirmwareVersion>2.8</FirmwareVersion>
+    <SerialNumber>316</SerialNumber>
+  </DeviceInformation>
+  <Configuration>
+    <ClockSynchronizer>ThisDevice</ClockSynchronizer>
+    <ScreenBrightness>7</ScreenBrightness>
+  </Configuration>
+  <Emission>
+    <Region X="128" Y="482" Width="70" Height="70">R0</Region>
+    <Region X="850" Y="445" Width="80" Height="78">G1</Region>
+  </Emission>
+  <Excitation>
+    <TriggerPeriod Reg="5000">200.000 Hz</TriggerPeriod>
+    <Sequence>
+      <LED Index="0" Flag="2">L470</LED>
+      <LED Index="1" Flag="4">L560</LED>
+    </Sequence>
+    <Power>
+      <L415 Reg="0">0.000%</L415>
+      <L470 Reg="10624">4.000%</L470>
+      <L560 Reg="14720">20.000%</L560>
+    </Power>
+  </Excitation>
+  <OptoStimulation>
+    <LaserWavelength>0</LaserWavelength>
+    <LaserAmplitude Reg="32760">49.989%</LaserAmplitude>
+    <StimPeriod Reg="100">10.000 Hz</StimPeriod>
+    <StimOn Reg="50">50 ms</StimOn>
+    <StimReps>10</StimReps>
+  </OptoStimulation>
+  <DigitalIOs>
+    <DigitalOutput0>Software</DigitalOutput0>
+    <Output1Routing>Both</Output1Routing>
+    <DigitalInput0>EventRising</DigitalInput0>
+    <DigitalInput1>EventRising</DigitalInput1>
+  </DigitalIOs>
+</Settings>

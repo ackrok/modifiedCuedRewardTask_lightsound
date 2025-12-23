@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VisualizerLayout Version="2.9.0">
+  <WindowSettings Index="0">
+    <NestedLayout>
+      <WindowSettings Index="9">
+        <NestedLayout>
+          <WindowSettings Index="55">
+            <Location>
+              <X>808</X>
+              <Y>125</Y>
+            </Location>
+            <Size>
+              <Width>336</Width>
+              <Height>209</Height>
+            </Size>
+            <VisualizerTypeName>Bonsai.Design.ObjectTextVisualizer</VisualizerTypeName>
+            <VisualizerSettings>
+              <ObjectTextVisualizer />
+            </VisualizerSettings>
+          </WindowSettings>
+          <WindowSettings Index="58">
+            <Location>
+              <X>446</X>
+              <Y>126</Y>
+            </Location>
+            <Size>
+              <Width>336</Width>
+              <Height>226</Height>
+            </Size>
+            <VisualizerTypeName>Bonsai.Design.ObjectTextVisualizer</VisualizerTypeName>
+            <VisualizerSettings>
+              <ObjectTextVisualizer />
+            </VisualizerSettings>
+          </WindowSettings>
+        </NestedLayout>
+      </WindowSettings>
+    </NestedLayout>
+  </WindowSettings>
+  <WindowSettings Index="1">
+    <Visible>false</Visible>
+    <VisualizerTypeName>StateVisualizer</VisualizerTypeName>
+    <VisualizerSettings>
+      <StateVisualizer>
+        <Capacity>10</Capacity>
+      </StateVisualizer>
+    </VisualizerSettings>
+  </WindowSettings>
+  <WindowSettings Index="3">
+    <Visible>false</Visible>
+    <VisualizerTypeName>TwoAfcVisualizer</VisualizerTypeName>
+    <VisualizerSettings>
+      <TwoAfcVisualizer />
+    </VisualizerSettings>
+  </WindowSettings>
+  <WindowSettings Index="6">
+    <Location>
+      <X>78</X>
+      <Y>78</Y>
+    </Location>
+    <Size>
+      <Width>336</Width>
+      <Height>279</Height>
+    </Size>
+  </WindowSettings>
+  <WindowSettings Index="10">
+    <Visible>false</Visible>
+    <VisualizerTypeName>Bonsai.Vision.Design.IplImageVisualizer</VisualizerTypeName>
+    <VisualizerSettings>
+      <IplImageVisualizer />
+    </VisualizerSettings>
+  </WindowSettings>
+</VisualizerLayout>

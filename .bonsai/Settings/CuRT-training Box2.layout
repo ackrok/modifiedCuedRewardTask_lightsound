@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VisualizerLayout Version="2.9.0">
+  <WindowSettings Index="0">
+    <Location>
+      <X>1576</X>
+      <Y>29</Y>
+    </Location>
+    <Size>
+      <Width>336</Width>
+      <Height>443</Height>
+    </Size>
+    <VisualizerTypeName>Bonsai.Design.ObjectTextVisualizer</VisualizerTypeName>
+    <VisualizerSettings>
+      <ObjectTextVisualizer />
+    </VisualizerSettings>
+  </WindowSettings>
+  <WindowSettings Index="1">
+    <Visible>false</Visible>
+    <VisualizerTypeName>StateVisualizer</VisualizerTypeName>
+    <VisualizerSettings>
+      <StateVisualizer>
+        <Capacity>10</Capacity>
+      </StateVisualizer>
+    </VisualizerSettings>
+  </WindowSettings>
+  <WindowSettings Index="3">
+    <Visible>false</Visible>
+    <VisualizerTypeName>TwoAfcVisualizer</VisualizerTypeName>
+    <VisualizerSettings>
+      <TwoAfcVisualizer />
+    </VisualizerSettings>
+  </WindowSettings>
+  <WindowSettings Index="6">
+    <Location>
+      <X>234</X>
+      <Y>234</Y>
+    </Location>
+    <Size>
+      <Width>336</Width>
+      <Height>279</Height>
+    </Size>
+  </WindowSettings>
+  <WindowSettings Index="10">
+    <Location>
+      <X>965</X>
+      <Y>92</Y>
+    </Location>
+    <Size>
+      <Width>336</Width>
+      <Height>279</Height>
+    </Size>
+    <VisualizerTypeName>Bonsai.Vision.Design.IplImageVisualizer</VisualizerTypeName>
+    <VisualizerSettings>
+      <IplImageVisualizer />
+    </VisualizerSettings>
+  </WindowSettings>
+  <WindowSettings Index="20">
+    <Location>
+      <X>-5</X>
+      <Y>364</Y>
+    </Location>
+    <Size>
+      <Width>1595</Width>
+      <Height>550</Height>
+    </Size>
+    <VisualizerTypeName>Neurophotometrics.Design.V2.Visualizers.ActivityVisualizer</VisualizerTypeName>
+    <VisualizerSettings>
+      <ActivityVisualizer />
+    </VisualizerSettings>
+  </WindowSettings>
+</VisualizerLayout>

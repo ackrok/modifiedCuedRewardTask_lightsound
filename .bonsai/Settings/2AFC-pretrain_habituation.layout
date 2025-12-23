@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VisualizerLayout Version="2.9.0">
+  <WindowSettings Index="0">
+    <Visible>false</Visible>
+    <Location>
+      <X>156</X>
+      <Y>156</Y>
+    </Location>
+    <Size>
+      <Width>612</Width>
+      <Height>510</Height>
+    </Size>
+    <VisualizerTypeName>Bonsai.Design.ObjectTextVisualizer</VisualizerTypeName>
+    <VisualizerSettings>
+      <ObjectTextVisualizer />
+    </VisualizerSettings>
+    <NestedLayout>
+      <WindowSettings Index="66">
+        <Visible>false</Visible>
+        <Location>
+          <X>78</X>
+          <Y>78</Y>
+        </Location>
+        <Size>
+          <Width>336</Width>
+          <Height>65</Height>
+        </Size>
+        <VisualizerTypeName>Bonsai.Design.ObjectTextVisualizer</VisualizerTypeName>
+        <VisualizerSettings>
+          <ObjectTextVisualizer />
+        </VisualizerSettings>
+        <NestedLayout>
+          <WindowSettings Index="12">
+            <Location>
+              <X>285</X>
+              <Y>585</Y>
+            </Location>
+            <Size>
+              <Width>416</Width>
+              <Height>279</Height>
+            </Size>
+            <VisualizerTypeName>Bonsai.Design.Visualizers.TimeSeriesVisualizer</VisualizerTypeName>
+            <VisualizerSettings>
+              <TimeSeriesVisualizer>
+                <Capacity>640</Capacity>
+                <Min>185</Min>
+                <Max>225</Max>
+                <AutoScale>true</AutoScale>
+              </TimeSeriesVisualizer>
+            </VisualizerSettings>
+          </WindowSettings>
+          <WindowSettings Index="18">
+            <Location>
+              <X>715</X>
+              <Y>586</Y>
+            </Location>
+            <Size>
+              <Width>416</Width>
+              <Height>279</Height>
+            </Size>
+            <VisualizerTypeName>Bonsai.Design.Visualizers.TimeSeriesVisualizer</VisualizerTypeName>
+            <VisualizerSettings>
+              <TimeSeriesVisualizer>
+                <Capacity>640</Capacity>
+                <Min>190</Min>
+                <Max>220</Max>
+                <AutoScale>true</AutoScale>
+              </TimeSeriesVisualizer>
+            </VisualizerSettings>
+          </WindowSettings>
+        </NestedLayout>
+      </WindowSettings>
+    </NestedLayout>
+  </WindowSettings>
+  <WindowSettings Index="1">
+    <Location>
+      <X>816</X>
+      <Y>114</Y>
+    </Location>
+    <Size>
+      <Width>689</Width>
+      <Height>475</Height>
+    </Size>
+    <VisualizerTypeName>StateVisualizer</VisualizerTypeName>
+    <VisualizerSettings>
+      <StateVisualizer>
+        <Capacity>10</Capacity>
+      </StateVisualizer>
+    </VisualizerSettings>
+  </WindowSettings>
+  <WindowSettings Index="2">
+    <Visible>false</Visible>
+    <Location>
+      <X>1172</X>
+      <Y>152</Y>
+    </Location>
+    <Size>
+      <Width>595</Width>
+      <Height>517</Height>
+    </Size>
+    <VisualizerTypeName>TwoAfcVisualizer</VisualizerTypeName>
+    <VisualizerSettings>
+      <TwoAfcVisualizer />
+    </VisualizerSettings>
+  </WindowSettings>
+  <WindowSettings Index="12">
+    <Visible>false</Visible>
+    <Location>
+      <X>26</X>
+      <Y>26</Y>
+    </Location>
+    <Size>
+      <Width>336</Width>
+      <Height>279</Height>
+    </Size>
+    <VisualizerTypeName>Bonsai.Vision.Design.IplImageVisualizer</VisualizerTypeName>
+    <VisualizerSettings>
+      <IplImageVisualizer />
+    </VisualizerSettings>
+  </WindowSettings>
+  <WindowSettings Index="13">
+    <Location>
+      <X>426</X>
+      <Y>35</Y>
+    </Location>
+    <Size>
+      <Width>474</Width>
+      <Height>365</Height>
+    </Size>
+    <VisualizerTypeName>Bonsai.Vision.Design.IplImageVisualizer</VisualizerTypeName>
+    <VisualizerSettings>
+      <IplImageVisualizer />
+    </VisualizerSettings>
+  </WindowSettings>
+  <WindowSettings Index="22">
+    <Location>
+      <X>387</X>
+      <Y>386</Y>
+    </Location>
+    <Size>
+      <Width>1194</Width>
+      <Height>579</Height>
+    </Size>
+    <VisualizerTypeName>Neurophotometrics.Design.V2.Visualizers.ActivityVisualizer</VisualizerTypeName>
+    <VisualizerSettings>
+      <ActivityVisualizer />
+    </VisualizerSettings>
+  </WindowSettings>
+</VisualizerLayout>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VisualizerLayout Version="2.9.0">
+  <WindowSettings Index="0">
+    <Visible>false</Visible>
+    <Location>
+      <X>950</X>
+      <Y>606</Y>
+    </Location>
+    <Size>
+      <Width>336</Width>
+      <Height>39</Height>
+    </Size>
+    <WindowState>Maximized</WindowState>
+    <VisualizerTypeName>Bonsai.Design.ObjectTextVisualizer</VisualizerTypeName>
+    <VisualizerSettings>
+      <ObjectTextVisualizer />
+    </VisualizerSettings>
+  </WindowSettings>
+  <WindowSettings Index="1">
+    <Location>
+      <X>328</X>
+      <Y>15</Y>
+    </Location>
+    <Size>
+      <Width>535</Width>
+      <Height>576</Height>
+    </Size>
+    <VisualizerTypeName>StateVisualizer</VisualizerTypeName>
+    <VisualizerSettings>
+      <StateVisualizer>
+        <Capacity>10</Capacity>
+      </StateVisualizer>
+    </VisualizerSettings>
+  </WindowSettings>
+  <WindowSettings Index="2">
+    <Location>
+      <X>42</X>
+      <Y>199</Y>
+    </Location>
+    <Size>
+      <Width>336</Width>
+      <Height>279</Height>
+    </Size>
+    <VisualizerTypeName>TwoAfcVisualizer</VisualizerTypeName>
+    <VisualizerSettings>
+      <TwoAfcVisualizer />
+    </VisualizerSettings>
+  </WindowSettings>
+  <WindowSettings Index="6">
+    <Location>
+      <X>211</X>
+      <Y>572</Y>
+    </Location>
+    <Size>
+      <Width>429</Width>
+      <Height>407</Height>
+    </Size>
+    <VisualizerTypeName>Bonsai.Vision.Design.IplImageVisualizer</VisualizerTypeName>
+    <VisualizerSettings>
+      <IplImageVisualizer />
+    </VisualizerSettings>
+  </WindowSettings>
+  <WindowSettings Index="7">
+    <Visible>false</Visible>
+    <VisualizerTypeName>Bonsai.Vision.Design.IplImageVisualizer</VisualizerTypeName>
+    <VisualizerSettings>
+      <IplImageVisualizer />
+    </VisualizerSettings>
+  </WindowSettings>
+</VisualizerLayout>
