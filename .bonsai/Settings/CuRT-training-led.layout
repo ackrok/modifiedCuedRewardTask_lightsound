@@ -150,12 +150,12 @@
   </WindowSettings>
   <WindowSettings Index="6">
     <Location>
-      <X>182</X>
-      <Y>182</Y>
+      <X>185</X>
+      <Y>98</Y>
     </Location>
     <Size>
-      <Width>336</Width>
-      <Height>279</Height>
+      <Width>339</Width>
+      <Height>283</Height>
     </Size>
   </WindowSettings>
 </VisualizerLayout>
