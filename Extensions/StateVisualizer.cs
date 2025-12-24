@@ -66,6 +66,7 @@ public class StateVisualizer : DialogTypeVisualizer
     public static readonly Dictionary<StateId, Color> Default = new Dictionary<StateId, Color>
     {
         { StateId.ITI, Color.Gray },
+        { StateId.LEDon, Color.Yellow },
         { StateId.Go, Color.ForestGreen },
         { StateId.NoGo, Color.Gold },
         { StateId.Left, Color.LightYellow },
@@ -74,6 +75,8 @@ public class StateVisualizer : DialogTypeVisualizer
         { StateId.Timeout, Color.Red },
         { StateId.Annotation, Color.Black },
         { StateId.Joystick, Color.White },
+        { StateId.SoundOnLeft, Color.Cyan },
+        { StateId.SoundOnRight, Color.Cyan },
         { StateId.Lick, Color.HotPink },
         { StateId.LickLeft, Color.Yellow },
         { StateId.LickRight, Color.Green },

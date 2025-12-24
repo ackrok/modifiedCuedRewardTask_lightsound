@@ -1,6 +1,7 @@
 public enum StateId
 {
     ITI,
+    LEDon,
     Go,
     NoGo,
     Left,
@@ -11,6 +12,8 @@ public enum StateId
     Annotation,
 
     Joystick,
+    SoundOnLeft,
+    SoundOnRight,
     Lick,
     LickLeft,
     LickRight,
