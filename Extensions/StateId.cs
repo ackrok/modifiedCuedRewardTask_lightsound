@@ -22,6 +22,8 @@ public enum StateId
 
 
     Hit,
+    LeftHit, 
+    RightHit,
     Miss,
     FalseAlarm,
     CorrectRejection,

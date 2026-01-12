@@ -83,6 +83,8 @@ public class StateVisualizer : DialogTypeVisualizer
         { StateId.LickCenter, Color.Black },
         { StateId.Blink, Color.Violet },
         { StateId.Hit, Color.Transparent},
+        { StateId.LeftHit, Color.Transparent},
+        { StateId.RightHit, Color.Transparent},
         { StateId.Miss, Color.Transparent},
         { StateId.CorrectRejection, Color.Transparent},
         { StateId.FalseAlarm, Color.Transparent},
