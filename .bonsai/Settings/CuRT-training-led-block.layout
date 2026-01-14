@@ -2,10 +2,10 @@
 <VisualizerLayout Version="2.9.0">
   <WindowSettings Index="0">
     <NestedLayout>
-      <WindowSettings Index="14">
+      <WindowSettings Index="19">
         <Location>
-          <X>31</X>
-          <Y>357</Y>
+          <X>29</X>
+          <Y>410</Y>
         </Location>
         <Size>
           <Width>336</Width>
@@ -16,7 +16,7 @@
           <ObjectTextVisualizer />
         </VisualizerSettings>
       </WindowSettings>
-      <WindowSettings Index="15">
+      <WindowSettings Index="20">
         <Visible>false</Visible>
         <Location>
           <X>707</X>
@@ -31,10 +31,10 @@
           <ObjectTextVisualizer />
         </VisualizerSettings>
       </WindowSettings>
-      <WindowSettings Index="16">
+      <WindowSettings Index="21">
         <Location>
-          <X>678</X>
-          <Y>288</Y>
+          <X>425</X>
+          <Y>443</Y>
         </Location>
         <Size>
           <Width>336</Width>
@@ -45,7 +45,8 @@
           <ObjectTextVisualizer />
         </VisualizerSettings>
       </WindowSettings>
-      <WindowSettings Index="23">
+      <WindowSettings Index="29">
+        <Visible>false</Visible>
         <Location>
           <X>360</X>
           <Y>295</Y>
@@ -59,7 +60,7 @@
           <ObjectTextVisualizer />
         </VisualizerSettings>
       </WindowSettings>
-      <WindowSettings Index="24">
+      <WindowSettings Index="30">
         <Location>
           <X>30</X>
           <Y>516</Y>
@@ -73,7 +74,7 @@
           <ObjectTextVisualizer />
         </VisualizerSettings>
       </WindowSettings>
-      <WindowSettings Index="25">
+      <WindowSettings Index="31">
         <Visible>false</Visible>
         <Location>
           <X>695</X>
@@ -88,10 +89,10 @@
           <ObjectTextVisualizer />
         </VisualizerSettings>
       </WindowSettings>
-      <WindowSettings Index="26">
+      <WindowSettings Index="32">
         <Location>
-          <X>675</X>
-          <Y>456</Y>
+          <X>438</X>
+          <Y>605</Y>
         </Location>
         <Size>
           <Width>336</Width>
@@ -102,10 +103,11 @@
           <ObjectTextVisualizer />
         </VisualizerSettings>
       </WindowSettings>
-      <WindowSettings Index="32">
+      <WindowSettings Index="38">
+        <Visible>false</Visible>
         <Location>
-          <X>358</X>
-          <Y>458</Y>
+          <X>414</X>
+          <Y>634</Y>
         </Location>
         <Size>
           <Width>336</Width>
@@ -116,39 +118,11 @@
           <ObjectTextVisualizer />
         </VisualizerSettings>
       </WindowSettings>
-      <WindowSettings Index="37">
+      <WindowSettings Index="43">
         <NestedLayout>
-          <WindowSettings Index="15">
+          <WindowSettings Index="16">
             <NestedLayout>
-              <WindowSettings Index="1">
-                <Location>
-                  <X>1378</X>
-                  <Y>322</Y>
-                </Location>
-                <Size>
-                  <Width>336</Width>
-                  <Height>111</Height>
-                </Size>
-                <VisualizerTypeName>Bonsai.Design.ObjectTextVisualizer</VisualizerTypeName>
-                <VisualizerSettings>
-                  <ObjectTextVisualizer />
-                </VisualizerSettings>
-              </WindowSettings>
-              <WindowSettings Index="2">
-                <Location>
-                  <X>1379</X>
-                  <Y>440</Y>
-                </Location>
-                <Size>
-                  <Width>336</Width>
-                  <Height>96</Height>
-                </Size>
-                <VisualizerTypeName>Bonsai.Design.ObjectTextVisualizer</VisualizerTypeName>
-                <VisualizerSettings>
-                  <ObjectTextVisualizer />
-                </VisualizerSettings>
-              </WindowSettings>
-              <WindowSettings Index="9">
+              <WindowSettings Index="11">
                 <Visible>false</Visible>
                 <Location>
                   <X>156</X>
@@ -163,7 +137,7 @@
                   <ObjectTextVisualizer />
                 </VisualizerSettings>
               </WindowSettings>
-              <WindowSettings Index="10">
+              <WindowSettings Index="12">
                 <Location>
                   <X>1038</X>
                   <Y>305</Y>
@@ -183,10 +157,45 @@
       </WindowSettings>
     </NestedLayout>
   </WindowSettings>
+  <WindowSettings Index="3">
+    <NestedLayout>
+      <WindowSettings Index="11">
+        <Visible>false</Visible>
+        <Location>
+          <X>404</X>
+          <Y>474</Y>
+        </Location>
+        <Size>
+          <Width>216</Width>
+          <Height>139</Height>
+        </Size>
+        <VisualizerTypeName>VisualizerGrid</VisualizerTypeName>
+        <VisualizerSettings>
+          <VisualizerGrid />
+        </VisualizerSettings>
+        <NestedLayout>
+          <WindowSettings Index="1">
+            <Location>
+              <X>818</X>
+              <Y>528</Y>
+            </Location>
+            <Size>
+              <Width>533</Width>
+              <Height>409</Height>
+            </Size>
+            <VisualizerTypeName>TwoAfcVisualizer</VisualizerTypeName>
+            <VisualizerSettings>
+              <TwoAfcVisualizer />
+            </VisualizerSettings>
+          </WindowSettings>
+        </NestedLayout>
+      </WindowSettings>
+    </NestedLayout>
+  </WindowSettings>
   <WindowSettings Index="6">
     <Location>
-      <X>32</X>
-      <Y>623</Y>
+      <X>50</X>
+      <Y>643</Y>
     </Location>
     <Size>
       <Width>336</Width>
