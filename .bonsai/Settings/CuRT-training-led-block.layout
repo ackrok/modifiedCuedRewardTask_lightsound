@@ -1,5 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <VisualizerLayout Version="2.9.0">
+  <WindowSettings Index="0">
+    <NestedLayout>
+      <WindowSettings Index="18">
+        <Visible>false</Visible>
+        <Location>
+          <X>182</X>
+          <Y>182</Y>
+        </Location>
+        <Size>
+          <Width>336</Width>
+          <Height>109</Height>
+        </Size>
+        <VisualizerTypeName>Bonsai.Design.ObjectTextVisualizer</VisualizerTypeName>
+        <VisualizerSettings>
+          <ObjectTextVisualizer />
+        </VisualizerSettings>
+      </WindowSettings>
+    </NestedLayout>
+  </WindowSettings>
   <WindowSettings Index="3">
     <NestedLayout>
       <WindowSettings Index="11">
