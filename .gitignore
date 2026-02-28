@@ -5,3 +5,4 @@ Packages
 *.exe
 *.exe.settings
 Bonsai.exe.WebView2
+.bonsai/Settings
