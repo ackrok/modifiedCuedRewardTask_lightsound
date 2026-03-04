@@ -78,7 +78,7 @@ public class StateVisualizer : DialogTypeVisualizer
         { StateId.SoundOnLeft, Color.Cyan },
         { StateId.SoundOnRight, Color.Cyan },
         { StateId.Lick, Color.HotPink },
-        { StateId.LickLeft, Color.Yellow },
+        { StateId.LickLeft, Color.Purple },
         { StateId.LickRight, Color.Green },
         { StateId.LickCenter, Color.Black },
         { StateId.Blink, Color.Violet },
