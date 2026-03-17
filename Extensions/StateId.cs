@@ -30,5 +30,6 @@ public enum StateId
     IncorrectAction,
     PullPenalty,
     EarlyResponse,
-    EarlyExit
+    EarlyExit,
+    Abort
 }

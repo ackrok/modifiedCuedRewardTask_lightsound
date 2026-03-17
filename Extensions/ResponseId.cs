@@ -10,5 +10,6 @@ public enum ResponseId
     EarlyResponse,
     EarlyExit,
     LeftHit,
-    RightHit
+    RightHit,
+    Abort
 }
