@@ -95,7 +95,7 @@
                   </Expression>
                   <Expression xsi:type="Combinator">
                     <Combinator xsi:type="IntProperty">
-                      <Value>2</Value>
+                      <Value>5</Value>
                     </Combinator>
                   </Expression>
                   <Expression xsi:type="rx:BehaviorSubject">
@@ -106,7 +106,7 @@
                   </Expression>
                   <Expression xsi:type="Combinator">
                     <Combinator xsi:type="IntProperty">
-                      <Value>2</Value>
+                      <Value>20</Value>
                     </Combinator>
                   </Expression>
                   <Expression xsi:type="rx:BehaviorSubject">
@@ -177,7 +177,7 @@
                   </Expression>
                   <Expression xsi:type="Divide">
                     <Operand xsi:type="IntProperty">
-                      <Value>2</Value>
+                      <Value>5</Value>
                     </Operand>
                   </Expression>
                   <Expression xsi:type="rx:BehaviorSubject">
@@ -287,8 +287,8 @@
                     <Property Name="Upper" DisplayName="Trial_ITI_Upper" Category="Trial ITI" />
                   </Expression>
                   <Expression xsi:type="IncludeWorkflow" Path="Extensions\RandomITI.bonsai">
-                    <Lower>1</Lower>
-                    <Upper>2</Upper>
+                    <Lower>4</Lower>
+                    <Upper>6</Upper>
                   </Expression>
                   <Expression xsi:type="rx:SelectMany">
                     <Name>LEDon</Name>
@@ -338,7 +338,7 @@
                               </Expression>
                               <Expression xsi:type="Combinator">
                                 <Combinator xsi:type="rx:Timer">
-                                  <rx:DueTime>PT0.2S</rx:DueTime>
+                                  <rx:DueTime>PT0.1S</rx:DueTime>
                                 </Combinator>
                               </Expression>
                               <Expression xsi:type="Combinator">
@@ -466,7 +466,7 @@
                   </Expression>
                   <Expression xsi:type="Combinator">
                     <Combinator xsi:type="rx:Delay">
-                      <rx:DueTime>PT0.5S</rx:DueTime>
+                      <rx:DueTime>PT0S</rx:DueTime>
                     </Combinator>
                   </Expression>
                   <Expression xsi:type="ExternalizedMapping">
@@ -570,8 +570,8 @@
                         </Expression>
                         <Expression xsi:type="Combinator">
                           <Combinator xsi:type="p2:CreateContinuousUniform">
-                            <p2:Lower>4</p2:Lower>
-                            <p2:Upper>4</p2:Upper>
+                            <p2:Lower>7</p2:Lower>
+                            <p2:Upper>7</p2:Upper>
                           </Combinator>
                         </Expression>
                         <Expression xsi:type="Combinator">
@@ -583,7 +583,7 @@
                           </PropertyMappings>
                         </Expression>
                         <Expression xsi:type="IncludeWorkflow" Path="Extensions\PlaySound.bonsai">
-                          <SoundIndex>4</SoundIndex>
+                          <SoundIndex>7</SoundIndex>
                         </Expression>
                         <Expression xsi:type="IncludeWorkflow" Path="Extensions\LogState.bonsai">
                           <Id>SoundOnLeft</Id>
@@ -639,30 +639,36 @@
                           </Combinator>
                         </Expression>
                         <Expression xsi:type="WorkflowOutput" />
-                        <Expression xsi:type="Combinator">
-                          <Combinator xsi:type="dsp:FunctionGenerator">
-                            <dsp:BufferLength>192000</dsp:BufferLength>
-                            <dsp:Frequency>800</dsp:Frequency>
-                            <dsp:Waveform>Sine</dsp:Waveform>
-                            <dsp:SampleRate>192000</dsp:SampleRate>
-                            <dsp:Depth>S32</dsp:Depth>
-                            <dsp:Amplitude>8000000</dsp:Amplitude>
-                            <dsp:Offset>0</dsp:Offset>
-                            <dsp:Phase>0</dsp:Phase>
-                          </Combinator>
+                        <Expression xsi:type="Disable">
+                          <Builder xsi:type="Combinator">
+                            <Combinator xsi:type="dsp:FunctionGenerator">
+                              <dsp:BufferLength>192000</dsp:BufferLength>
+                              <dsp:Frequency>800</dsp:Frequency>
+                              <dsp:Waveform>Sine</dsp:Waveform>
+                              <dsp:SampleRate>192000</dsp:SampleRate>
+                              <dsp:Depth>S32</dsp:Depth>
+                              <dsp:Amplitude>8000000</dsp:Amplitude>
+                              <dsp:Offset>0</dsp:Offset>
+                              <dsp:Phase>0</dsp:Phase>
+                            </Combinator>
+                          </Builder>
                         </Expression>
-                        <Expression xsi:type="Combinator">
-                          <Combinator xsi:type="rx:Take">
-                            <rx:Count>1</rx:Count>
-                          </Combinator>
+                        <Expression xsi:type="Disable">
+                          <Builder xsi:type="Combinator">
+                            <Combinator xsi:type="rx:Take">
+                              <rx:Count>1</rx:Count>
+                            </Combinator>
+                          </Builder>
                         </Expression>
-                        <Expression xsi:type="Combinator">
-                          <Combinator xsi:type="p4:UpdateSoundWaveform">
-                            <p4:DeviceIndex xsi:nil="true" />
-                            <p4:SoundIndex>2</p4:SoundIndex>
-                            <p4:SoundName>2</p4:SoundName>
-                            <p4:SampleRate>SampleRate192000Hz</p4:SampleRate>
-                          </Combinator>
+                        <Expression xsi:type="Disable">
+                          <Builder xsi:type="Combinator">
+                            <Combinator xsi:type="p4:UpdateSoundWaveform">
+                              <p4:DeviceIndex xsi:nil="true" />
+                              <p4:SoundIndex>2</p4:SoundIndex>
+                              <p4:SoundName>2</p4:SoundName>
+                              <p4:SampleRate>SampleRate192000Hz</p4:SampleRate>
+                            </Combinator>
+                          </Builder>
                         </Expression>
                       </Nodes>
                       <Edges>
@@ -729,7 +735,7 @@
                         </Expression>
                         <Expression xsi:type="Combinator">
                           <Combinator xsi:type="rx:Delay">
-                            <rx:DueTime>PT1S</rx:DueTime>
+                            <rx:DueTime>PT0S</rx:DueTime>
                           </Combinator>
                         </Expression>
                         <Expression xsi:type="SubscribeSubject">
@@ -748,7 +754,7 @@
                         </Expression>
                         <Expression xsi:type="Combinator">
                           <Combinator xsi:type="rx:Timer">
-                            <rx:DueTime>PT3S</rx:DueTime>
+                            <rx:DueTime>PT20S</rx:DueTime>
                           </Combinator>
                         </Expression>
                         <Expression xsi:type="Combinator">
@@ -829,7 +835,7 @@
                         </Expression>
                         <Expression xsi:type="Combinator">
                           <Combinator xsi:type="IntProperty">
-                            <Value>40</Value>
+                            <Value>60</Value>
                           </Combinator>
                         </Expression>
                         <Expression xsi:type="p3:BehaviorCommand">
@@ -961,8 +967,8 @@
                         </Expression>
                         <Expression xsi:type="Combinator">
                           <Combinator xsi:type="p2:CreateContinuousUniform">
-                            <p2:Lower>5</p2:Lower>
-                            <p2:Upper>5</p2:Upper>
+                            <p2:Lower>7</p2:Lower>
+                            <p2:Upper>7</p2:Upper>
                           </Combinator>
                         </Expression>
                         <Expression xsi:type="Combinator">
@@ -974,7 +980,7 @@
                           </PropertyMappings>
                         </Expression>
                         <Expression xsi:type="IncludeWorkflow" Path="Extensions\PlaySound.bonsai">
-                          <SoundIndex>5</SoundIndex>
+                          <SoundIndex>7</SoundIndex>
                         </Expression>
                         <Expression xsi:type="IncludeWorkflow" Path="Extensions\LogState.bonsai">
                           <Id>SoundOnRight</Id>
@@ -1124,7 +1130,7 @@
                         </Expression>
                         <Expression xsi:type="Combinator">
                           <Combinator xsi:type="rx:Delay">
-                            <rx:DueTime>PT1S</rx:DueTime>
+                            <rx:DueTime>PT0S</rx:DueTime>
                           </Combinator>
                         </Expression>
                         <Expression xsi:type="SubscribeSubject">
@@ -1143,7 +1149,7 @@
                         </Expression>
                         <Expression xsi:type="Combinator">
                           <Combinator xsi:type="rx:Timer">
-                            <rx:DueTime>PT3S</rx:DueTime>
+                            <rx:DueTime>PT20S</rx:DueTime>
                           </Combinator>
                         </Expression>
                         <Expression xsi:type="Combinator">
@@ -1221,7 +1227,7 @@
                         </Expression>
                         <Expression xsi:type="Combinator">
                           <Combinator xsi:type="IntProperty">
-                            <Value>40</Value>
+                            <Value>60</Value>
                           </Combinator>
                         </Expression>
                         <Expression xsi:type="p3:BehaviorCommand">
@@ -1487,7 +1493,7 @@
             <Expression xsi:type="Disable">
               <Builder xsi:type="Combinator">
                 <Combinator xsi:type="rx:Take">
-                  <rx:Count>250</rx:Count>
+                  <rx:Count>200</rx:Count>
                 </Combinator>
               </Builder>
             </Expression>
@@ -1529,7 +1535,7 @@
               </PropertyMappings>
             </Expression>
             <Expression xsi:type="io:CsvWriter">
-              <io:FileName>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT026/251219-FP5\2026-01-15T14-45-39/ResponseStat.csv</io:FileName>
+              <io:FileName>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT045/260315-Pretrain4\2026-03-15T17-10-35/ResponseStat.csv</io:FileName>
               <io:Append>false</io:Append>
               <io:Overwrite>false</io:Overwrite>
               <io:Suffix>None</io:Suffix>
@@ -1570,9 +1576,9 @@
             </Expression>
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="p1:StateTransition">
-                <p1:Trial>8</p1:Trial>
-                <p1:Id>LeftHit</p1:Id>
-                <p1:ElapsedTime>3826402.958976</p1:ElapsedTime>
+                <p1:Trial>355</p1:Trial>
+                <p1:Id>LEDon</p1:Id>
+                <p1:ElapsedTime>2270027.392</p1:ElapsedTime>
               </Combinator>
             </Expression>
             <Expression xsi:type="Combinator">
@@ -1610,7 +1616,7 @@
               </PropertyMappings>
             </Expression>
             <Expression xsi:type="io:CsvWriter">
-              <io:FileName>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT026/251219-FP5\2026-01-15T14-45-39/StateTransitions.csv</io:FileName>
+              <io:FileName>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT045/260315-Pretrain4\2026-03-15T17-10-35/StateTransitions.csv</io:FileName>
               <io:Append>false</io:Append>
               <io:Overwrite>false</io:Overwrite>
               <io:Suffix>None</io:Suffix>
@@ -1660,7 +1666,7 @@
               </PropertyMappings>
             </Expression>
             <Expression xsi:type="io:CsvWriter">
-              <io:FileName>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT026/251219-FP5\2026-01-15T14-45-39/sounds.csv</io:FileName>
+              <io:FileName>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT045/260315-Pretrain4\2026-03-15T17-10-35/sounds.csv</io:FileName>
               <io:Append>false</io:Append>
               <io:Overwrite>false</io:Overwrite>
               <io:Suffix>None</io:Suffix>
@@ -1671,11 +1677,11 @@
             </Expression>
             <Expression xsi:type="PropertySource" TypeArguments="io:EnumerateFiles,sys:String">
               <MemberName>Path</MemberName>
-              <Value>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT026</Value>
+              <Value>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT045</Value>
             </Expression>
             <Expression xsi:type="Add">
               <Operand xsi:type="StringProperty">
-                <Value>/251219-FP5</Value>
+                <Value>/260315-Pretrain4</Value>
               </Operand>
             </Expression>
             <Expression xsi:type="Combinator">
@@ -1830,7 +1836,7 @@
                   </Expression>
                   <Expression xsi:type="Combinator">
                     <Combinator xsi:type="dsp:MatrixWriter">
-                      <dsp:Path>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT026/251219-FP5\2026-01-15T14-45-39/Joystick.bin</dsp:Path>
+                      <dsp:Path>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT045/260315-Pretrain4\2026-03-15T17-10-35/Joystick.bin</dsp:Path>
                       <dsp:Suffix>None</dsp:Suffix>
                       <dsp:Overwrite>false</dsp:Overwrite>
                       <dsp:Layout>ColumnMajor</dsp:Layout>
@@ -1926,7 +1932,7 @@
                   </Expression>
                   <Expression xsi:type="Combinator">
                     <Combinator xsi:type="dsp:MatrixWriter">
-                      <dsp:Path>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT026/251219-FP5\2026-01-15T14-45-39/soundcard.bin</dsp:Path>
+                      <dsp:Path>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT045/260315-Pretrain4\2026-03-15T17-10-35/soundcard.bin</dsp:Path>
                       <dsp:Suffix>None</dsp:Suffix>
                       <dsp:Overwrite>false</dsp:Overwrite>
                       <dsp:Layout>ColumnMajor</dsp:Layout>
@@ -2472,7 +2478,7 @@
               <gui:Enabled>true</gui:Enabled>
               <gui:Visible>true</gui:Visible>
               <gui:Font>Microsoft Sans Serif, 12pt</gui:Font>
-              <gui:Text>Training Parameters -  Blocks: 2  Hits per block/side: 2  Number of hits to reach: 8</gui:Text>
+              <gui:Text>Training Parameters -  Blocks: 20  Hits per block/side: 5  Number of hits to reach: 200</gui:Text>
             </Expression>
             <Expression xsi:type="VisualizerMapping" />
             <Expression xsi:type="Combinator">
@@ -2515,7 +2521,7 @@
               <gui:Enabled>true</gui:Enabled>
               <gui:Visible>true</gui:Visible>
               <gui:Font>Microsoft Sans Serif, 12pt</gui:Font>
-              <gui:Text>Counter -   Total Number of Sides: 4  Total Number of Hits: 9</gui:Text>
+              <gui:Text>Counter -   Completed Sides:  21  Completed Hits: 108</gui:Text>
             </Expression>
             <Expression xsi:type="VisualizerMapping" />
             <Expression xsi:type="gui:TableLayoutPanelBuilder">
@@ -2619,7 +2625,7 @@
       <Expression xsi:type="Disable">
         <Builder xsi:type="Combinator">
           <Combinator xsi:type="cv:CameraCapture">
-            <cv:Index>4</cv:Index>
+            <cv:Index>0</cv:Index>
             <cv:CaptureProperties />
           </Combinator>
         </Builder>
@@ -2627,7 +2633,7 @@
       <Expression xsi:type="Disable">
         <Builder xsi:type="Combinator">
           <Combinator xsi:type="cv:VideoWriter">
-            <cv:FileName>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT019/251218-Task7\2025-12-18T14-14-10\BehaviorVid_Side1.avi</cv:FileName>
+            <cv:FileName>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\Test/260311-Pretrain1\2026-03-11T13-05-23\BehaviorVid_Side1.avi</cv:FileName>
             <cv:Suffix>Timestamp</cv:Suffix>
             <cv:Buffered>true</cv:Buffered>
             <cv:Overwrite>false</cv:Overwrite>
@@ -2677,7 +2683,7 @@
       </Expression>
       <Expression xsi:type="Disable">
         <Builder xsi:type="io:CsvWriter">
-          <io:FileName>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT019/251218-Task7\2025-12-18T14-14-10/VidFrames_Top.csv</io:FileName>
+          <io:FileName>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\Test/260311-Pretrain1\2026-03-11T13-05-23/VidFrames_Top.csv</io:FileName>
           <io:Append>false</io:Append>
           <io:Overwrite>false</io:Overwrite>
           <io:Suffix>None</io:Suffix>

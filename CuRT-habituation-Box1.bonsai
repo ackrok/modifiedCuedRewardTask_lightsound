@@ -120,7 +120,7 @@
                   </Expression>
                   <Expression xsi:type="Combinator">
                     <Combinator xsi:type="rx:Delay">
-                      <rx:DueTime>PT5S</rx:DueTime>
+                      <rx:DueTime>PT5.057S</rx:DueTime>
                     </Combinator>
                   </Expression>
                   <Expression xsi:type="Disable">
@@ -792,8 +792,8 @@
                   </Expression>
                   <Expression xsi:type="Combinator">
                     <Combinator xsi:type="p2:CreateContinuousUniform">
-                      <p2:Lower>5</p2:Lower>
-                      <p2:Upper>5</p2:Upper>
+                      <p2:Lower>4</p2:Lower>
+                      <p2:Upper>6</p2:Upper>
                     </Combinator>
                   </Expression>
                   <Expression xsi:type="Combinator">
@@ -992,7 +992,7 @@
               </PropertyMappings>
             </Expression>
             <Expression xsi:type="io:CsvWriter">
-              <io:FileName>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT037\260121-Hab2\2026-01-21T16-02-29/ResponseStat.csv</io:FileName>
+              <io:FileName>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT045\260310-Hab2\2026-03-10T14-55-25/ResponseStat.csv</io:FileName>
               <io:Append>false</io:Append>
               <io:Overwrite>false</io:Overwrite>
               <io:Suffix>None</io:Suffix>
@@ -1034,8 +1034,8 @@
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="p1:StateTransition">
                 <p1:Trial>199</p1:Trial>
-                <p1:Id>IncorrectAction</p1:Id>
-                <p1:ElapsedTime>4351309.990976</p1:ElapsedTime>
+                <p1:Id>Hit</p1:Id>
+                <p1:ElapsedTime>1827338.270976</p1:ElapsedTime>
               </Combinator>
             </Expression>
             <Expression xsi:type="Combinator">
@@ -1073,7 +1073,7 @@
               </PropertyMappings>
             </Expression>
             <Expression xsi:type="io:CsvWriter">
-              <io:FileName>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT037\260121-Hab2\2026-01-21T16-02-29/StateTransitions.csv</io:FileName>
+              <io:FileName>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT045\260310-Hab2\2026-03-10T14-55-25/StateTransitions.csv</io:FileName>
               <io:Append>false</io:Append>
               <io:Overwrite>false</io:Overwrite>
               <io:Suffix>None</io:Suffix>
@@ -1123,7 +1123,7 @@
               </PropertyMappings>
             </Expression>
             <Expression xsi:type="io:CsvWriter">
-              <io:FileName>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT037\260121-Hab2\2026-01-21T16-02-29/sounds.csv</io:FileName>
+              <io:FileName>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT045\260310-Hab2\2026-03-10T14-55-25/sounds.csv</io:FileName>
               <io:Append>false</io:Append>
               <io:Overwrite>false</io:Overwrite>
               <io:Suffix>None</io:Suffix>
@@ -1134,11 +1134,11 @@
             </Expression>
             <Expression xsi:type="PropertySource" TypeArguments="io:EnumerateFiles,sys:String">
               <MemberName>Path</MemberName>
-              <Value>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT037</Value>
+              <Value>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT045</Value>
             </Expression>
             <Expression xsi:type="Add">
               <Operand xsi:type="StringProperty">
-                <Value>\260121-Hab2</Value>
+                <Value>\260310-Hab2</Value>
               </Operand>
             </Expression>
             <Expression xsi:type="Combinator">
@@ -1293,7 +1293,7 @@
                   </Expression>
                   <Expression xsi:type="Combinator">
                     <Combinator xsi:type="dsp:MatrixWriter">
-                      <dsp:Path>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT037\260121-Hab2\2026-01-21T16-02-29/Joystick.bin</dsp:Path>
+                      <dsp:Path>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT045\260310-Hab2\2026-03-10T14-55-25/Joystick.bin</dsp:Path>
                       <dsp:Suffix>None</dsp:Suffix>
                       <dsp:Overwrite>false</dsp:Overwrite>
                       <dsp:Layout>ColumnMajor</dsp:Layout>
@@ -1389,7 +1389,7 @@
                   </Expression>
                   <Expression xsi:type="Combinator">
                     <Combinator xsi:type="dsp:MatrixWriter">
-                      <dsp:Path>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT037\260121-Hab2\2026-01-21T16-02-29/soundcard.bin</dsp:Path>
+                      <dsp:Path>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT045\260310-Hab2\2026-03-10T14-55-25/soundcard.bin</dsp:Path>
                       <dsp:Suffix>None</dsp:Suffix>
                       <dsp:Overwrite>false</dsp:Overwrite>
                       <dsp:Layout>ColumnMajor</dsp:Layout>
@@ -1654,92 +1654,68 @@
           </Edges>
         </Workflow>
       </Expression>
-      <Expression xsi:type="Disable">
-        <Builder xsi:type="SubscribeSubject">
-          <Name>Path</Name>
-        </Builder>
+      <Expression xsi:type="SubscribeSubject">
+        <Name>Path</Name>
       </Expression>
-      <Expression xsi:type="Disable">
-        <Builder xsi:type="Add">
-          <Operand xsi:type="StringProperty">
-            <Value>\BehaviorVid_Side1.avi</Value>
-          </Operand>
-        </Builder>
+      <Expression xsi:type="Add">
+        <Operand xsi:type="StringProperty">
+          <Value>\BehaviorVid_Side1.avi</Value>
+        </Operand>
       </Expression>
-      <Expression xsi:type="Disable">
-        <Builder xsi:type="PropertyMapping">
-          <PropertyMappings>
-            <Property Name="FileName" />
-          </PropertyMappings>
-        </Builder>
+      <Expression xsi:type="PropertyMapping">
+        <PropertyMappings>
+          <Property Name="FileName" />
+        </PropertyMappings>
       </Expression>
-      <Expression xsi:type="Disable">
-        <Builder xsi:type="Combinator">
-          <Combinator xsi:type="cv:CameraCapture">
-            <cv:Index>5</cv:Index>
-            <cv:CaptureProperties />
-          </Combinator>
-        </Builder>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="cv:CameraCapture">
+          <cv:Index>0</cv:Index>
+          <cv:CaptureProperties />
+        </Combinator>
       </Expression>
-      <Expression xsi:type="Disable">
-        <Builder xsi:type="Combinator">
-          <Combinator xsi:type="cv:VideoWriter">
-            <cv:FileName>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT029\260121-Hab2\2026-01-21T12-58-54\BehaviorVid_Side1.avi</cv:FileName>
-            <cv:Suffix>Timestamp</cv:Suffix>
-            <cv:Buffered>true</cv:Buffered>
-            <cv:Overwrite>false</cv:Overwrite>
-            <cv:FourCC>FMP4</cv:FourCC>
-            <cv:FrameRate>100</cv:FrameRate>
-            <cv:FrameSize>
-              <cv:Width>0</cv:Width>
-              <cv:Height>0</cv:Height>
-            </cv:FrameSize>
-            <cv:ResizeInterpolation>NearestNeighbor</cv:ResizeInterpolation>
-          </Combinator>
-        </Builder>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="cv:VideoWriter">
+          <cv:FileName>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT045\260310-Hab2\2026-03-10T14-55-25\BehaviorVid_Side1.avi</cv:FileName>
+          <cv:Suffix>Timestamp</cv:Suffix>
+          <cv:Buffered>true</cv:Buffered>
+          <cv:Overwrite>false</cv:Overwrite>
+          <cv:FourCC>FMP4</cv:FourCC>
+          <cv:FrameRate>100</cv:FrameRate>
+          <cv:FrameSize>
+            <cv:Width>0</cv:Width>
+            <cv:Height>0</cv:Height>
+          </cv:FrameSize>
+          <cv:ResizeInterpolation>NearestNeighbor</cv:ResizeInterpolation>
+        </Combinator>
       </Expression>
-      <Expression xsi:type="Disable">
-        <Builder xsi:type="SubscribeSubject">
-          <Name>Path</Name>
-        </Builder>
+      <Expression xsi:type="SubscribeSubject">
+        <Name>Path</Name>
       </Expression>
-      <Expression xsi:type="Disable">
-        <Builder xsi:type="Add">
-          <Operand xsi:type="StringProperty">
-            <Value>/VidFrames_Top.csv</Value>
-          </Operand>
-        </Builder>
+      <Expression xsi:type="Add">
+        <Operand xsi:type="StringProperty">
+          <Value>/VidFrames_Top.csv</Value>
+        </Operand>
       </Expression>
-      <Expression xsi:type="Disable">
-        <Builder xsi:type="PropertyMapping">
-          <PropertyMappings>
-            <Property Name="FileName" />
-          </PropertyMappings>
-        </Builder>
+      <Expression xsi:type="PropertyMapping">
+        <PropertyMappings>
+          <Property Name="FileName" />
+        </PropertyMappings>
       </Expression>
-      <Expression xsi:type="Disable">
-        <Builder xsi:type="Combinator">
-          <Combinator xsi:type="rx:Timestamp" />
-        </Builder>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="rx:Timestamp" />
       </Expression>
-      <Expression xsi:type="Disable">
-        <Builder xsi:type="MemberSelector">
-          <Selector>Timestamp.TimeOfDay.TotalMilliseconds</Selector>
-        </Builder>
+      <Expression xsi:type="MemberSelector">
+        <Selector>Timestamp.TimeOfDay.TotalMilliseconds</Selector>
       </Expression>
-      <Expression xsi:type="Disable">
-        <Builder xsi:type="Combinator">
-          <Combinator xsi:type="rx:Zip" />
-        </Builder>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="rx:Zip" />
       </Expression>
-      <Expression xsi:type="Disable">
-        <Builder xsi:type="io:CsvWriter">
-          <io:FileName>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT029\260121-Hab2\2026-01-21T12-58-54/VidFrames_Top.csv</io:FileName>
-          <io:Append>false</io:Append>
-          <io:Overwrite>false</io:Overwrite>
-          <io:Suffix>None</io:Suffix>
-          <io:IncludeHeader>true</io:IncludeHeader>
-        </Builder>
+      <Expression xsi:type="io:CsvWriter">
+        <io:FileName>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT045\260310-Hab2\2026-03-10T14-55-25/VidFrames_Top.csv</io:FileName>
+        <io:Append>false</io:Append>
+        <io:Overwrite>false</io:Overwrite>
+        <io:Suffix>None</io:Suffix>
+        <io:IncludeHeader>true</io:IncludeHeader>
       </Expression>
       <Expression xsi:type="Disable">
         <Builder xsi:type="Combinator">

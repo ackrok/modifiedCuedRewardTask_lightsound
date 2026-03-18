@@ -91,7 +91,8 @@ public class StateVisualizer : DialogTypeVisualizer
         { StateId.PullPenalty, Color.Transparent},
         { StateId.IncorrectAction, Color.Transparent},
         { StateId.EarlyResponse, Color.Transparent},
-        { StateId.EarlyExit, Color.Transparent}
+        { StateId.EarlyExit, Color.Transparent},
+        { StateId.Abort, Color.Transparent}
     };
 }
 
