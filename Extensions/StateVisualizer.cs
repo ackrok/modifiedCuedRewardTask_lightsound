@@ -75,6 +75,7 @@ public class StateVisualizer : DialogTypeVisualizer
         { StateId.Timeout, Color.Red },
         { StateId.Annotation, Color.Black },
         { StateId.Joystick, Color.White },
+        { StateId.Abort, Color.DarkOrange},
         { StateId.SoundOnLeft, Color.Cyan },
         { StateId.SoundOnRight, Color.Cyan },
         { StateId.Lick, Color.HotPink },
@@ -92,7 +93,6 @@ public class StateVisualizer : DialogTypeVisualizer
         { StateId.IncorrectAction, Color.Transparent},
         { StateId.EarlyResponse, Color.Transparent},
         { StateId.EarlyExit, Color.Transparent},
-        { StateId.Abort, Color.Transparent}
     };
 }
 

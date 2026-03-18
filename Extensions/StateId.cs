@@ -21,6 +21,7 @@ public enum StateId
     Blink,
 
 
+    Abort,
     Hit,
     LeftHit, 
     RightHit,
@@ -30,6 +31,5 @@ public enum StateId
     IncorrectAction,
     PullPenalty,
     EarlyResponse,
-    EarlyExit,
-    Abort
+    EarlyExit
 }
