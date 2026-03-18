@@ -1676,7 +1676,7 @@
               </PropertyMappings>
             </Expression>
             <Expression xsi:type="io:CsvWriter">
-              <io:FileName>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT045/260316-Train1\2026-03-16T16-47-27/ResponseStat.csv</io:FileName>
+              <io:FileName>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT042/260317-Train2\2026-03-18T13-35-00/ResponseStat.csv</io:FileName>
               <io:Append>false</io:Append>
               <io:Overwrite>false</io:Overwrite>
               <io:Suffix>None</io:Suffix>
@@ -1717,9 +1717,9 @@
             </Expression>
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="p1:StateTransition">
-                <p1:Trial>264</p1:Trial>
+                <p1:Trial>5</p1:Trial>
                 <p1:Id>LEDon</p1:Id>
-                <p1:ElapsedTime>2354457.373984</p1:ElapsedTime>
+                <p1:ElapsedTime>2512233.762976</p1:ElapsedTime>
               </Combinator>
             </Expression>
             <Expression xsi:type="Combinator">
@@ -1757,7 +1757,7 @@
               </PropertyMappings>
             </Expression>
             <Expression xsi:type="io:CsvWriter">
-              <io:FileName>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT045/260316-Train1\2026-03-16T16-47-27/StateTransitions.csv</io:FileName>
+              <io:FileName>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT042/260317-Train2\2026-03-18T13-35-00/StateTransitions.csv</io:FileName>
               <io:Append>false</io:Append>
               <io:Overwrite>false</io:Overwrite>
               <io:Suffix>None</io:Suffix>
@@ -1807,7 +1807,7 @@
               </PropertyMappings>
             </Expression>
             <Expression xsi:type="io:CsvWriter">
-              <io:FileName>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT045/260316-Train1\2026-03-16T16-47-27/sounds.csv</io:FileName>
+              <io:FileName>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT042/260317-Train2\2026-03-18T13-35-00/sounds.csv</io:FileName>
               <io:Append>false</io:Append>
               <io:Overwrite>false</io:Overwrite>
               <io:Suffix>None</io:Suffix>
@@ -1977,7 +1977,7 @@
                   </Expression>
                   <Expression xsi:type="Combinator">
                     <Combinator xsi:type="dsp:MatrixWriter">
-                      <dsp:Path>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT045/260316-Train1\2026-03-16T16-47-27/Joystick.bin</dsp:Path>
+                      <dsp:Path>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT042/260317-Train2\2026-03-18T13-35-00/Joystick.bin</dsp:Path>
                       <dsp:Suffix>None</dsp:Suffix>
                       <dsp:Overwrite>false</dsp:Overwrite>
                       <dsp:Layout>ColumnMajor</dsp:Layout>
@@ -2073,7 +2073,7 @@
                   </Expression>
                   <Expression xsi:type="Combinator">
                     <Combinator xsi:type="dsp:MatrixWriter">
-                      <dsp:Path>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT045/260316-Train1\2026-03-16T16-47-27/soundcard.bin</dsp:Path>
+                      <dsp:Path>C:\Users\SippyLab\Desktop\Anya_Jaden_CuRT\DATA\JT042/260317-Train2\2026-03-18T13-35-00/soundcard.bin</dsp:Path>
                       <dsp:Suffix>None</dsp:Suffix>
                       <dsp:Overwrite>false</dsp:Overwrite>
                       <dsp:Layout>ColumnMajor</dsp:Layout>
@@ -2509,8 +2509,14 @@
             <Expression xsi:type="SubscribeSubject">
               <Name>LeftHitCounter</Name>
             </Expression>
+            <Expression xsi:type="scr:ExpressionTransform">
+              <scr:Expression>Convert.ToDouble(it)</scr:Expression>
+            </Expression>
             <Expression xsi:type="SubscribeSubject">
               <Name>LeftTrialCounter</Name>
+            </Expression>
+            <Expression xsi:type="scr:ExpressionTransform">
+              <scr:Expression>Convert.ToDouble(it)</scr:Expression>
             </Expression>
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="rx:WithLatestFrom" />
@@ -2539,8 +2545,14 @@
             <Expression xsi:type="SubscribeSubject">
               <Name>RightHitCounter</Name>
             </Expression>
+            <Expression xsi:type="scr:ExpressionTransform">
+              <scr:Expression>Convert.ToDouble(it)</scr:Expression>
+            </Expression>
             <Expression xsi:type="SubscribeSubject">
               <Name>RightTrialCounter</Name>
+            </Expression>
+            <Expression xsi:type="scr:ExpressionTransform">
+              <scr:Expression>Convert.ToDouble(it)</scr:Expression>
             </Expression>
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="rx:WithLatestFrom" />
@@ -2569,8 +2581,14 @@
             <Expression xsi:type="SubscribeSubject">
               <Name>TotalHitCounter</Name>
             </Expression>
+            <Expression xsi:type="scr:ExpressionTransform">
+              <scr:Expression>Convert.ToDouble(it)</scr:Expression>
+            </Expression>
             <Expression xsi:type="SubscribeSubject">
               <Name>TotalTrialCounter</Name>
+            </Expression>
+            <Expression xsi:type="scr:ExpressionTransform">
+              <scr:Expression>Convert.ToDouble(it)</scr:Expression>
             </Expression>
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="rx:WithLatestFrom" />
@@ -2609,28 +2627,34 @@
             <Expression xsi:type="WorkflowOutput" />
           </Nodes>
           <Edges>
-            <Edge From="0" To="2" Label="Source1" />
-            <Edge From="1" To="2" Label="Source2" />
+            <Edge From="0" To="1" Label="Source1" />
+            <Edge From="1" To="4" Label="Source1" />
             <Edge From="2" To="3" Label="Source1" />
-            <Edge From="3" To="4" Label="Source1" />
+            <Edge From="3" To="4" Label="Source2" />
             <Edge From="4" To="5" Label="Source1" />
             <Edge From="5" To="6" Label="Source1" />
-            <Edge From="6" To="21" Label="Source1" />
-            <Edge From="7" To="9" Label="Source1" />
-            <Edge From="8" To="9" Label="Source2" />
+            <Edge From="6" To="7" Label="Source1" />
+            <Edge From="7" To="8" Label="Source1" />
+            <Edge From="8" To="27" Label="Source1" />
             <Edge From="9" To="10" Label="Source1" />
-            <Edge From="10" To="11" Label="Source1" />
+            <Edge From="10" To="13" Label="Source1" />
             <Edge From="11" To="12" Label="Source1" />
-            <Edge From="12" To="13" Label="Source1" />
-            <Edge From="13" To="21" Label="Source2" />
-            <Edge From="14" To="16" Label="Source1" />
-            <Edge From="15" To="16" Label="Source2" />
+            <Edge From="12" To="13" Label="Source2" />
+            <Edge From="13" To="14" Label="Source1" />
+            <Edge From="14" To="15" Label="Source1" />
+            <Edge From="15" To="16" Label="Source1" />
             <Edge From="16" To="17" Label="Source1" />
-            <Edge From="17" To="18" Label="Source1" />
+            <Edge From="17" To="27" Label="Source2" />
             <Edge From="18" To="19" Label="Source1" />
-            <Edge From="19" To="20" Label="Source1" />
-            <Edge From="20" To="21" Label="Source3" />
-            <Edge From="21" To="22" Label="Source1" />
+            <Edge From="19" To="22" Label="Source1" />
+            <Edge From="20" To="21" Label="Source1" />
+            <Edge From="21" To="22" Label="Source2" />
+            <Edge From="22" To="23" Label="Source1" />
+            <Edge From="23" To="24" Label="Source1" />
+            <Edge From="24" To="25" Label="Source1" />
+            <Edge From="25" To="26" Label="Source1" />
+            <Edge From="26" To="27" Label="Source3" />
+            <Edge From="27" To="28" Label="Source1" />
           </Edges>
         </Workflow>
       </Expression>
@@ -2800,7 +2824,7 @@
               <gui:Enabled>true</gui:Enabled>
               <gui:Visible>true</gui:Visible>
               <gui:Font>Microsoft Sans Serif, 12pt</gui:Font>
-              <gui:Text>Counter -  Hit: 127  Miss: 0  Incorrect Actions: 137</gui:Text>
+              <gui:Text>Counter -  Hit: 4  Miss: 0  Incorrect Actions: 1</gui:Text>
             </Expression>
             <Expression xsi:type="VisualizerMapping" />
             <Expression xsi:type="gui:TableLayoutPanelBuilder">
